@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1A6FFF;
+  --color-primary-tint: #EAF2FF;
+  --color-accent: #20D3E8;
+  --color-heading: #14305E;
+  --color-body: #3B4A63;
+  --color-muted: #9AA8BF;
+  --color-background: #F4F8FF;
+  --color-surface: #FFFFFF;
+  --color-border: #DCE6F5;
+
+  --color-success: #059669;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-body antialiased;
+}
+
+.shadow-float {
+  box-shadow: 0 20px 50px rgba(26, 111, 255, 0.08);
+}
